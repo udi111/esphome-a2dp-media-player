@@ -9,7 +9,7 @@ from . import ad2pmp_ns
 A2DPMediaPlayer = ad2pmp_ns.class_("A2DPMediaPlayer", media_player.MediaPlayer, cg.Component)
 
 CONFIG_SCHEMA = cv.All(
-    media_player.MEDIA_PLAYER_SCHEMA.extend({
+    media_player._MEDIA_PLAYER_SCHEMA.extend({
         cv.GenerateID(): cv.declare_id(A2DPMediaPlayer),
     }).extend(cv.COMPONENT_SCHEMA),
 
